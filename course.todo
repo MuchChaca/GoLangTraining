@@ -38,8 +38,8 @@
 	✔ 33 hexadecimal numbering system @done (6/5/2017, 10:28:56 AM)
 	✔ 34 ASCII UTF8 @done (6/5/2017, 10:38:43 AM)
 	✔ 35 format printing dec binary hexadecimal @done (6/5/2017, 10:59:33 AM)
-	☐ 36 UTF8 loops first look
-	☐ 37 review
+	✔ 36 UTF8 loops first look @done (6/5/2017, 11:31:06 AM)
+	✔ 37 review @done (6/5/2017, 11:35:31 AM)
 38-54 Language Fundamentals:
 	☐ 38 preview language fundamentals
 				https://www.ardanlabs.com/hardcore-go 
