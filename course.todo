@@ -21,4 +21,26 @@
 	✔ 18 Go un ; go build ; go install @done (6/5/2017, 8:49:57 AM)
 	✔ 19 IDE webstorm @done (6/5/2017, 8:50:31 AM)
 	✔ 19 IDE webstorm atom continued @done (6/5/2017, 8:50:49 AM)
-	☐ 
+	✔ 20 free for students webstorm @done (6/5/2017, 8:52:09 AM)
+	✔ 21 creating your first project @done (6/5/2017, 8:52:19 AM)
+	✔ 22 writing your first program AWESOME @done (6/5/2017, 8:52:30 AM)
+	✔ 24 github explained @done (6/5/2017, 8:52:38 AM)
+	✔ 25 getting started with github @done (6/5/2017, 8:52:53 AM)
+	✔ 26 review @done (6/5/2017, 8:52:58 AM)
+27-37 Computer Fundamentals:
+	✔ 27 preview how computers work @done (6/5/2017, 9:22:49 AM)
+	✔ 28.1 how computers work @done (6/5/2017, 9:42:30 AM)
+			// his youtube
+	✔ 28.2 how computers work @done (6/5/2017, 9:47:30 AM)
+	✔ 30 house keeping go get update @done (6/5/2017, 10:13:45 AM)
+	✔ 31 numeral systems overview @done (6/5/2017, 10:27:22 AM)
+	✔ 32 binary numbering system @done (6/5/2017, 10:27:27 AM)
+	✔ 33 hexadecimal numbering system @done (6/5/2017, 10:28:56 AM)
+	✔ 34 ASCII UTF8 @done (6/5/2017, 10:38:43 AM)
+	☐ 35 format printing dec binary hexadecimal
+	☐ 36 UTF8 loops first look
+	☐ 37 review
+38-54 Language Fundamentals:
+	☐ 38 preview language fundamentals
+				https://www.ardanlabs.com/hardcore-go 
+	☐ 39  
