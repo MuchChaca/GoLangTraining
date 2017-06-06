@@ -41,6 +41,57 @@
 	✔ 36 UTF8 loops first look @done (6/5/2017, 11:31:06 AM)
 	✔ 37 review @done (6/5/2017, 11:35:31 AM)
 38-54 Language Fundamentals:
-	☐ 38 preview language fundamentals
+	✔ 38 preview language fundamentals @done (6/6/2017, 8:24:28 AM)
 				https://www.ardanlabs.com/hardcore-go 
-	☐ 39  
+	✔ 39 packages @done (6/6/2017, 9:13:08 AM)
+	☐ 40 go run ; build ; install ; clean
+	☐ 41 variables
+	☐ 42 scope package block level
+	☐ 43 scope example visibility in packages
+	☐ 44 closure
+	☐ 45 language spec scope
+	☐ 46 blank identifer
+	☐ 47 constantsiotas
+	☐ 48 constantsuntyped
+	☐ 49 words of encouragement
+	☐ 50 memory and memory address
+	☐ 51 pointers
+	☐ 52 using pointers
+	☐ 53 remainder
+	☐ 54 review
+55-65 Control Flow:
+	☐ 55 preview control Flow
+	☐ 56 init cond post
+	☐ 57 nexted loops
+	☐ 58 condition no condition break continue
+	☐ 59 runes
+	☐ 60 loop showing UTF8 runes
+	☐ 61 strings made up of runes
+	☐ 62 switch case default
+	☐ 63 if statements
+	☐ 64 exercise solutions
+	☐ 65 review control flow
+66-84 Functions:
+	☐ 66 preview functions
+	☐ 67 main params args purpose of functions
+	☐ 68 returns
+	☐ 69 variadic parameters
+	☐ 70 veriadic args
+	☐ 71 func expression
+	☐ 72 closure
+	☐ 73 callbacks
+	☐ 74 callback example
+	☐ 75 recursion
+	☐ 76 defer
+	☐ 77 passby value
+	☐ 78 reference types
+	☐ 79 a non self executing func
+	☐ 80 bool expressions
+	☐ 81 exercises part1
+	☐ 82 exercises part2
+	☐ 83 exercises part3
+	☐ 84 review
+85-87 Data Structures - Array:
+	☐ 85 preview data structures
+	☐ 86 arrays
+	☐ 87 array examples
