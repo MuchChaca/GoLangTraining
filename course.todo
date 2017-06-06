@@ -46,7 +46,8 @@
 	✔ 39 packages @done (6/6/2017, 9:13:08 AM)
 	✔ 40 go run ; build ; install ; clean @done (6/6/2017, 9:23:32 AM)
 	✔ 41 variables @done (6/6/2017, 9:54:54 AM)
-	☐ 42 scope package block level
+	✔ 42 scope package block level @done (6/6/2017, 10:09:05 AM)
+				https://www.golang-book.com/books/web/01-02#scope
 	☐ 43 scope example visibility in packages
 	☐ 44 closure
 	☐ 45 language spec scope
