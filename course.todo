@@ -50,8 +50,9 @@
 				https://www.golang-book.com/books/web/01-02#scope
 	✔ 43 scope example visibility in packages @done (6/6/2017, 10:58:39 AM)
 	✔ 44 closure @done (6/6/2017, 11:35:58 AM)
-	☐ 45 language spec scope
-	☐ 46 blank identifer
+	✔ 45 language spec scope @done (6/6/2017, 11:49:04 AM)
+				// get the online spec (offi doc) + golang-book.com
+	✔ 46 blank identifer @done (6/6/2017, 12:07:00 PM)
 	☐ 47 constantsiotas
 	☐ 48 constantsuntyped
 	☐ 49 words of encouragement
