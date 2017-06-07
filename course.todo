@@ -42,12 +42,12 @@
 	✔ 37 review @done (6/5/2017, 11:35:31 AM)
 38-54 Language Fundamentals:
 	✔ 38 preview language fundamentals @done (6/6/2017, 8:24:28 AM)
-				https://www.ardanlabs.com/hardcore-go 
+				// https://www.ardanlabs.com/hardcore-go 
 	✔ 39 packages @done (6/6/2017, 9:13:08 AM)
 	✔ 40 go run ; build ; install ; clean @done (6/6/2017, 9:23:32 AM)
 	✔ 41 variables @done (6/6/2017, 9:54:54 AM)
 	✔ 42 scope package block level @done (6/6/2017, 10:09:05 AM)
-				https://www.golang-book.com/books/web/01-02#scope
+				// https://www.golang-book.com/books/web/01-02#scope
 	✔ 43 scope example visibility in packages @done (6/6/2017, 10:58:39 AM)
 	✔ 44 closure @done (6/6/2017, 11:35:58 AM)
 	✔ 45 language spec scope @done (6/6/2017, 11:49:04 AM)
@@ -64,9 +64,11 @@
 	✔ 53 remainder @done (6/7/2017, 9:45:11 AM)
 	✔ 54 review @done (6/7/2017, 9:45:12 AM)
 55-65 Control Flow:
-	☐ 55 preview control Flow
-	☐ 56 init cond post
-	☐ 57 nexted loops
+	✔ 55 preview control Flow @done (6/7/2017, 10:45:59 AM)
+	✔ 56 init cond post @done (6/7/2017, 11:50:54 AM)
+				// https://forum.golangbridge.org/
+				// effective go
+	☐ 57 nested loops
 	☐ 58 condition no condition break continue
 	☐ 59 runes
 	☐ 60 loop showing UTF8 runes
