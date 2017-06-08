@@ -68,7 +68,7 @@
 	✔ 56 init cond post @done (6/7/2017, 11:50:54 AM)
 				// https://forum.golangbridge.org/
 				// effective go
-	☐ 57 nested loops
+	✔ 57 nested loops @done (6/8/2017, 9:44:02 AM)
 	☐ 58 condition no condition break continue
 	☐ 59 runes
 	☐ 60 loop showing UTF8 runes
