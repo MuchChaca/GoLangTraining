@@ -69,9 +69,9 @@
 				// https://forum.golangbridge.org/
 				// effective go
 	✔ 57 nested loops @done (6/8/2017, 9:44:02 AM)
-	☐ 58 condition no condition break continue
-	☐ 59 runes
-	☐ 60 loop showing UTF8 runes
+	✔ 58 condition no condition break continue @done (6/8/2017, 4:30:08 PM)
+	✔ 59 runes @done (6/8/2017, 5:07:16 PM)
+	✔ 60 loop showing UTF8 runes @done (6/8/2017, 5:24:14 PM)
 	☐ 61 strings made up of runes
 	☐ 62 switch case default
 	☐ 63 if statements
