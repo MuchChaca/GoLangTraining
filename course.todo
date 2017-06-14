@@ -89,11 +89,12 @@
 	✔ 74 callback example @done (6/14/2017, 11:40:59 AM)
 	✔ 75 recursion @done (6/14/2017, 12:17:06 PM)
 	✔ 76 defer @done (6/14/2017, 12:34:12 PM)
-	☐ 77 passby value
-	☐ 78 reference types
-	☐ 79 a non self executing func
+	✔ 77 passby value @done (6/14/2017, 1:03:37 PM)
+	✔ 78 reference types @done (6/14/2017, 3:35:51 PM)
+	✔ 79 a non self executing func @done (6/14/2017, 3:42:25 PM)
 	☐ 80 bool expressions
-	☐ 81 exercises part1
+			// remember to dl the rest of the course (udemy.com)
+	☐ 81 exercises part1  
 	☐ 82 exercises part2
 	☐ 83 exercises part3
 	☐ 84 review
