@@ -80,8 +80,8 @@
 66-84 Functions:
 	✔ 66 preview functions @done (6/12/2017, 9:39:27 AM)
 	✔ 67 main params args purpose of functions @done (6/12/2017, 9:52:18 AM)
-	☐ 68 returns
-	☐ 69 variadic parameters
+	✔ 68 returns @done (6/12/2017, 10:05:58 AM)
+	✔ 69 variadic parameters @done (6/14/2017, 9:53:58 AM)
 	☐ 70 veriadic args
 	☐ 71 func expression
 	☐ 72 closure
