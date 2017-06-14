@@ -84,7 +84,7 @@
 	✔ 69 variadic parameters @done (6/14/2017, 9:53:58 AM)
 	✔ 70 veriadic args @done (6/14/2017, 10:07:05 AM)
 	✔ 71 func expression @done (6/14/2017, 10:19:09 AM)
-	☐ 72 closure
+	✔ 72 closure @done (6/14/2017, 10:50:56 AM)
 	☐ 73 callbacks
 	☐ 74 callback example
 	☐ 75 recursion
