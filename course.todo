@@ -92,7 +92,7 @@
 	✔ 77 passby value @done (6/14/2017, 1:03:37 PM)
 	✔ 78 reference types @done (6/14/2017, 3:35:51 PM)
 	✔ 79 a non self executing func @done (6/14/2017, 3:42:25 PM)
-	☐ 80 bool expressions
+	✔ 80 bool expressions @done (6/14/2017, 4:59:39 PM)
 			// remember to dl the rest of the course (udemy.com)
 	☐ 81 exercises part1  
 	☐ 82 exercises part2
