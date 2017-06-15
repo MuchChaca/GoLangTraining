@@ -99,9 +99,9 @@
 	✔ 84 review @done (6/15/2017, 12:07:32 PM)
 			// DRY : Don't Repeat Yourself
 85-87 Data Structures - Array:
-	☐ 85 preview data structures
-	☐ 86 arrays
-	☐ 87 array examples
+	✔ 85 preview data structures @done (6/15/2017, 12:19:21 PM)
+	✔ 86 arrays @done (6/15/2017, 12:34:53 PM)
+	✔ 87 array examples @done (6/15/2017, 12:54:13 PM)
 88-93 Data Structures - Slice:
 	☐ 88 slices intro
 	☐ 89 slices examples
