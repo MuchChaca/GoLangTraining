@@ -91,15 +91,56 @@
 	✔ 76 defer @done (6/14/2017, 12:34:12 PM)
 	✔ 77 passby value @done (6/14/2017, 1:03:37 PM)
 	✔ 78 reference types @done (6/14/2017, 3:35:51 PM)
-	✔ 79 a non self executing func @done (6/14/2017, 3:42:25 PM)
+	✔ 79 anonym self executing func @done (6/14/2017, 3:42:25 PM)
 	✔ 80 bool expressions @done (6/14/2017, 4:59:39 PM)
-			// remember to dl the rest of the course (udemy.com)
 	✔ 81 exercises part1 @done (6/15/2017, 9:25:52 AM)
-			// 6. not tweeted
-	☐ 82 exercises part2
-	☐ 83 exercises part3
-	☐ 84 review
+	✔ 82 exercises part2 @done (6/15/2017, 10:40:02 AM)
+	✔ 83 exercises part3 @done (6/15/2017, 10:40:03 AM)
+	✔ 84 review @done (6/15/2017, 12:07:32 PM)
+			// DRY : Don't Repeat Yourself
 85-87 Data Structures - Array:
 	☐ 85 preview data structures
 	☐ 86 arrays
 	☐ 87 array examples
+88-93 Data Structures - Slice:
+	☐ 88 slices intro
+	☐ 89 slices examples
+	☐ 90 slices multidimentional
+	☐ 91 slice creation short hand var make
+	☐ 92 slices incrementing a value
+	☐ 93 review slices
+94-105 Data Structures - Map:
+	☐ 94 map intro reference types
+	☐ 95 part01 map examples
+	☐ 96 part02 map examples
+	☐ 97 part03 map examples
+	☐ 98 map documentation
+	☐ 99 map range loop
+	☐ 100 github pull
+	☐ 101 hash tables explained
+	☐ 102 all english words awesome preview
+	☐ 103 hashing words
+	☐ 104 building our hash functions
+	☐ 105 finished hash algorithm
+106-113 Data Structures - Struct:
+	☐ 106 struct intro oop example
+	☐ 107 struct docs oop
+	☐ 108 go language for talking about structs
+	☐ 109 methods embedded types pointers
+	☐ 110 json intro marshalling
+	☐ 111 json unmarshall
+	☐ 112 a json encoded code
+	☐ 113 b json encoded code
+114-125 Interfaces:
+	☐ 114 interfaces intro
+	☐ 115 interface example
+	☐ 116 interface examples power of interfaces read all new scanner
+	☐ 117 kennedy interfaces
+	☐ 118 donovan interfaces
+	☐ 119 package sort exercise
+	☐ 120 sort interfaces string slice
+	☐ 121 sort strings reverse
+	☐ 122 sorting ints
+	☐ 123 empty interface
+	☐ 124 method set revisited
+	☐ 125 conversion vs assertion
