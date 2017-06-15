@@ -3,10 +3,7 @@ package main
 import "fmt"
 
 func foo(number ...int) {
-	for _, i := range number {
-		fmt.Print(i, " ")
-	}
-	fmt.Println()
+	fmt.Println(number)
 }
 
 func main() {

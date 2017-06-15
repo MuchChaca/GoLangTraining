@@ -4,11 +4,7 @@ import "fmt"
 
 func main() {
 	half := func(number int) (int, bool) {
-		div := number / 2
-		if number%2 == 0 {
-			return div, true
-		}
-		return div, false
+		return number / 2, number%2 == 0
 	}
 	fmt.Print("half(1) returns ")
 	fmt.Println(half(1))
