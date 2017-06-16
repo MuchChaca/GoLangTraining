@@ -106,8 +106,8 @@
 	✔ 88 slices intro @done (6/16/2017, 12:49:52 PM)
 			// https://gobyexample.com   -> to see more ways to work with slices
 	✔ 89 slices examples @done (6/16/2017, 4:51:03 PM)
-	☐ 90 slices multidimentional
-	☐ 91 slice creation short hand var make
+	✔ 90 slices multidimentional @done (6/16/2017, 6:14:56 PM)
+	✔ 91 slice creation short hand var make @done (6/16/2017, 7:00:22 PM)
 	☐ 92 slices incrementing a value
 	☐ 93 review slices
 94-105 Data Structures - Map:
