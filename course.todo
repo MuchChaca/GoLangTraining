@@ -103,8 +103,9 @@
 	✔ 86 arrays @done (6/15/2017, 12:34:53 PM)
 	✔ 87 array examples @done (6/15/2017, 12:54:13 PM)
 88-93 Data Structures - Slice:
-	☐ 88 slices intro
-	☐ 89 slices examples
+	✔ 88 slices intro @done (6/16/2017, 12:49:52 PM)
+			// https://gobyexample.com   -> to see more ways to work with slices
+	✔ 89 slices examples @done (6/16/2017, 4:51:03 PM)
 	☐ 90 slices multidimentional
 	☐ 91 slice creation short hand var make
 	☐ 92 slices incrementing a value
