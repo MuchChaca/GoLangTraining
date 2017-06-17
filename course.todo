@@ -115,15 +115,15 @@
 	✔ 95 part01 map examples @done (6/17/2017, 12:33:00 PM)
 	✔ 96 part02 map examples @done (6/17/2017, 1:35:31 PM)
 	✔ 97 part03 map examples @done (6/17/2017, 1:44:39 PM)
-	☐ 98 map documentation
+	✔ 98 map documentation @done (6/17/2017, 1:55:29 PM)
 			//=> https://www.golang-book.com/books/intro/6
-	☐ 99 map range loop
-	☐ 100 github pull
-	☐ 101 hash tables explained
-	☐ 102 all english words awesome preview
-	☐ 103 hashing words
-	☐ 104 building our hash functions
-	☐ 105 finished hash algorithm
+	✔ 99 map range loop @done (6/17/2017, 2:29:25 PM)
+	✔ 100 github pull @done (6/17/2017, 2:33:43 PM)
+	✔ 101 hash tables explained @done (6/17/2017, 2:48:40 PM)
+	✔ 102 all english words awesome preview @done (6/17/2017, 3:36:10 PM)
+	✔ 103 hashing words @done (6/17/2017, 4:14:06 PM)
+	✔ 104 building our hash functions @done (6/17/2017, 9:15:04 PM)
+	✔ 105 finished hash algorithm @done (6/17/2017, 9:47:15 PM)
 106-113 Data Structures - Struct:
 	☐ 106 struct intro oop example
 	☐ 107 struct docs oop
