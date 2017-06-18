@@ -125,14 +125,19 @@
 	✔ 104 building our hash functions @done (6/17/2017, 9:15:04 PM)
 	✔ 105 finished hash algorithm @done (6/17/2017, 9:47:15 PM)
 106-113 Data Structures - Struct:
-	☐ 106 struct intro oop example
-	☐ 107 struct docs oop
-	☐ 108 go language for talking about structs
-	☐ 109 methods embedded types pointers
+	✔ 106 struct intro oop example @done (6/18/2017, 12:11:41 PM)
+	✔ 107 struct docs oop @done (6/18/2017, 2:42:33 PM)
+			// article from Bill Kennedy
+			//	// http://www.goinggo.net/2015/09/composition-with-go.html
+			// embedding -> effective go
+	✔ 108 go language for talking about structs @done (6/18/2017, 4:10:41 PM)
+			// (+) notes.txt
+	✔ 109 methods embedded types pointers @done (6/18/2017, 5:52:15 PM)
 	☐ 110 json intro marshalling
 	☐ 111 json unmarshall
 	☐ 112 a json encoded code
 	☐ 113 b json encoded code
+			// dl the rest
 114-125 Interfaces:
 	☐ 114 interfaces intro
 	☐ 115 interface example
