@@ -144,11 +144,11 @@
 			// encoding : reader interface
 			// Encoding / Decoding → It's not there, we work with a stream
 114-125 Interfaces:
-	☐ 114 interfaces intro
-	☐ 115 interface example
-	☐ 116 interface examples power of interfaces read all new scanner
-	☐ 117 kennedy interfaces
-	☐ 118 donovan interfaces
+	✔ 114 interfaces intro @done (6/19/2017, 12:19:20 PM)
+	✔ 115 interface example @done (6/19/2017, 1:23:28 PM)
+	✔ 116 interface examples power of interfaces read all new scanner @done (6/19/2017, 1:37:12 PM)
+	✔ 117 kennedy interfaces @done (6/19/2017, 2:06:53 PM)
+	✔ 118 donovan interfaces @done (6/19/2017, 3:27:51 PM)
 	☐ 119 package sort exercise
 	☐ 120 sort interfaces string slice
 	☐ 121 sort strings reverse
