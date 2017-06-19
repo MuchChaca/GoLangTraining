@@ -133,11 +133,16 @@
 	✔ 108 go language for talking about structs @done (6/18/2017, 4:10:41 PM)
 			// (+) notes.txt
 	✔ 109 methods embedded types pointers @done (6/18/2017, 5:52:15 PM)
-	☐ 110 json intro marshalling
-	☐ 111 json unmarshall
-	☐ 112 a json encoded code
-	☐ 113 b json encoded code
-			// dl the rest
+	✔ 110 json intro marshalling @done (6/19/2017, 10:22:22 AM)
+			// http://www.jsoneditoronline.org 
+			// // https://godoc.org/encoding/json 
+	✔ 111 json unmarshall @done (6/19/2017, 10:36:35 AM)
+			// Marshal / Unmarshal → When it's with a slice of bytes, right there
+	✔ 112 a json encoded code @done (6/19/2017, 10:48:19 AM)
+			// encoding : writer interface
+	✔ 113 b json encoded code @done (6/19/2017, 12:06:13 PM)
+			// encoding : reader interface
+			// Encoding / Decoding → It's not there, we work with a stream
 114-125 Interfaces:
 	☐ 114 interfaces intro
 	☐ 115 interface example
@@ -151,3 +156,40 @@
 	☐ 123 empty interface
 	☐ 124 method set revisited
 	☐ 125 conversion vs assertion
+126-131 Concurrency:
+	☐ 126 concurrency wg
+	☐ 127 parallelism
+	☐ 128 race condition
+	☐ 129 mutex
+	☐ 130 atomicity
+	☐ 131 review
+132-139 Channels:
+	☐ 132-01 channels intro
+	☐ 133-02 range clause
+	☐ 134-03 ntoone wait group
+	☐ 135-04 ntoone semaphore pattern
+	☐ 136-05 ntoone complete
+	☐ 137-06 oneton complete
+	☐ 138-07 pass return channels
+	☐ 139-08 channel directions end receive bidirectional
+140-148 Applied Concurrency:
+	☐ 140-09 increment or with channels
+	☐ 141-10 deadlock challenges
+	☐ 142-11 factorial challenges
+	☐ 143-12 pipeline pattern
+	☐ 144-13 factorial challenge redux
+	☐ 145-14 pipeline pattern redux solution
+	☐ 146-15 fan out - fan in pattern overview
+	☐ 147-16 fan in
+	☐ 148-17 fan out fan in
+149-156 Concurrency Challenges:
+	☐ 149-18-01 challenge
+	☐ 150-18-02 solution
+	☐ 151-19 challenge 02
+	☐ 152-20 solution 02
+	☐ 153-21 challenge 03
+	☐ 154-22 solution 03
+	☐ 155-23 challenge incrementor
+	☐ 156-24 solution incrementor
+		// dl the rest
+
