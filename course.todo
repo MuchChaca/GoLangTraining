@@ -150,9 +150,9 @@
 	✔ 117 kennedy interfaces @done (6/19/2017, 2:06:53 PM)
 	✔ 118 donovan interfaces @done (6/19/2017, 3:27:51 PM)
 	✔ 119 package sort exercise @done (6/19/2017, 3:44:23 PM)
-	☐ 120 sort interfaces string slice
-	☐ 121 sort strings reverse
-	☐ 122 sorting ints
+	✔ 120 sort interfaces string slice @done (6/19/2017, 5:29:14 PM)
+	✔ 121 sort strings reverse @done (6/19/2017, 6:18:50 PM)
+	✔ 122 sorting ints @done (6/19/2017, 6:27:59 PM)
 	☐ 123 empty interface
 	☐ 124 method set revisited
 	☐ 125 conversion vs assertion
