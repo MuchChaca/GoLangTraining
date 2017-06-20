@@ -159,10 +159,13 @@
 126-131 Concurrency:
 	✔ 126 concurrency wg @done (6/20/2017, 12:35:35 PM)
 	✔ 127 parallelism @done (6/20/2017, 12:35:36 PM)
-	☐ 128 race condition
-	☐ 129 mutex
-	☐ 130 atomicity
-	☐ 131 review
+	✔ 128 race condition @done (6/20/2017, 12:55:11 PM)
+	✔ 129 mutex @done (6/20/2017, 1:18:10 PM)
+			// MUTEX : MUTual EXclusion object
+	✔ 130 atomicity @done (6/20/2017, 1:41:51 PM)
+			// another way to "sync things"
+	✔ 131 review @done (6/20/2017, 2:00:41 PM)
+			// my.doc : Channels
 132-139 Channels:
 	☐ 132-01 channels intro
 	☐ 133-02 range clause
