@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// const : KB, MB, GB
 const (
 	_ = iota // 0
 	// x << (x*x) : shift a bit

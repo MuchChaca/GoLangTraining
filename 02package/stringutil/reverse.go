@@ -1,8 +1,8 @@
 // Package stringutil contains utility functions
 package stringutil
 
-// upper case func's name -> exported package
-func Reverse(s string) string{
+// Reverse : upper case func's name -> exported package
+func Reverse(s string) string {
 	return reverseTwo(s)
 }
 

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// const : _, B, C
 const (
 	_ = iota      // 0
 	B = iota * 10 // 1 - 10

@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(&a)
 
 	// Point to a memory address where an int is stored
-	var b *int = &a
+	var b = &a
 
 	fmt.Println(b)
 

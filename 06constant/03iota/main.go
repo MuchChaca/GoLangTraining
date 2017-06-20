@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// const : A, B, C
 const (
 	A = iota // 0
 	B = iota // 1
@@ -9,6 +10,7 @@ const (
 )
 
 func main() {
+	// D : a const = iota
 	const D = iota
 
 	fmt.Println(A)
