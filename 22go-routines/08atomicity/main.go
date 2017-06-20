@@ -32,6 +32,7 @@ func incrementor(s string) {
 		// otherwise, go run -race main.go says it's a race condition...
 		// source : http://wysocki.in/golang-concurrency-data-races/
 		fmt.Println(s, i, "\tCounter:\t", atomic.LoadInt64(&counter))
+		// fmt.Println(s, i, "\tCounter:\t", counter) // => race condition
 	}
 	wg.Done()
 }

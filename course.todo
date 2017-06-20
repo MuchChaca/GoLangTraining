@@ -167,7 +167,12 @@
 	✔ 131 review @done (6/20/2017, 2:00:41 PM)
 			// my.doc : Channels
 132-139 Channels:
-	☐ 132-01 channels intro
+	✔ 132-01 channels intro @done (6/20/2017, 5:11:04 PM)
+			// red the my.doc Channels link bf this
+			// Go proverb:
+			//	//	// « Do not communicate by sharing memory; instead, share memory by communicating. »
+			// more Go proverbs: http://go-proverbs.github.io/
+			//	//	// read more about channels : https://golang.org/doc/effective_go.html#concurrency
 	☐ 133-02 range clause
 	☐ 134-03 ntoone wait group
 	☐ 135-04 ntoone semaphore pattern
