@@ -153,8 +153,8 @@
 	✔ 120 sort interfaces string slice @done (6/19/2017, 5:29:14 PM)
 	✔ 121 sort strings reverse @done (6/19/2017, 6:18:50 PM)
 	✔ 122 sorting ints @done (6/19/2017, 6:27:59 PM)
-	☐ 123 empty interface
-	☐ 124 method set revisited
+	✔ 123 empty interface @done (6/20/2017, 9:20:36 AM)
+	✔ 124 method set revisited @done (6/20/2017, 9:37:58 AM)
 	☐ 125 conversion vs assertion
 126-131 Concurrency:
 	☐ 126 concurrency wg
