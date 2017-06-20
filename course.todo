@@ -175,12 +175,13 @@
 			//	//	// read more about channels : https://golang.org/doc/effective_go.html#concurrency
 	✔ 133-02 range clause @done (6/20/2017, 7:33:06 PM)
 			// 22go-routines/09channels/01range/main.go → some explanations
-	☐ 134-03 ntoone wait group
-	☐ 135-04 ntoone semaphore pattern
-	☐ 136-05 ntoone complete
-	☐ 137-06 oneton complete
-	☐ 138-07 pass return channels
-	☐ 139-08 channel directions end receive bidirectional
+	✔ 134-03 n to one wait group @done (6/20/2017, 7:59:41 PM)
+			// 22go-routines/09channels/02wait-group/main.go → flow excution (~)
+	✔ 135-04 n to one semaphore pattern @done (6/20/2017, 8:21:03 PM)
+	✔ 136-05 n to one complete @done (6/20/2017, 8:29:26 PM)
+	✔ 137-06 one to n complete @done (6/20/2017, 8:39:53 PM)
+	✔ 138-07 pass return channels @done (6/20/2017, 8:53:41 PM)
+	✔ 139-08 channel directions end receive bidirectional @done (6/20/2017, 9:08:19 PM)
 140-148 Applied Concurrency:
 	☐ 140-09 increment or with channels
 	☐ 141-10 deadlock challenges
