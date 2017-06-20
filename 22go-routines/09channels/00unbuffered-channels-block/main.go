@@ -11,7 +11,7 @@ func main() {
 
 	go func() {
 		for i := 0; i < 10; i++ {
-			c <- i // the routines stops until something takes the value off
+			c <- i // take this value and put it on this channel ; the routines stops until something takes the value off
 		}
 	}()
 

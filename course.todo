@@ -173,7 +173,8 @@
 			//	//	// « Do not communicate by sharing memory; instead, share memory by communicating. »
 			// more Go proverbs: http://go-proverbs.github.io/
 			//	//	// read more about channels : https://golang.org/doc/effective_go.html#concurrency
-	☐ 133-02 range clause
+	✔ 133-02 range clause @done (6/20/2017, 7:33:06 PM)
+			// 22go-routines/09channels/01range/main.go → some explanations
 	☐ 134-03 ntoone wait group
 	☐ 135-04 ntoone semaphore pattern
 	☐ 136-05 ntoone complete
