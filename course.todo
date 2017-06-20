@@ -157,8 +157,8 @@
 	✔ 124 method set revisited @done (6/20/2017, 9:37:58 AM)
 	✔ 125 conversion vs assertion @done (6/20/2017, 10:38:08 AM)
 126-131 Concurrency:
-	☐ 126 concurrency wg
-	☐ 127 parallelism
+	✔ 126 concurrency wg @done (6/20/2017, 12:35:35 PM)
+	✔ 127 parallelism @done (6/20/2017, 12:35:36 PM)
 	☐ 128 race condition
 	☐ 129 mutex
 	☐ 130 atomicity
