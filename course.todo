@@ -185,7 +185,7 @@
 140-148 Applied Concurrency:
 	✔ 140-09 increment or with channels @done (6/21/2017, 10:24:59 AM)
 	✔ 141-10 deadlock challenges @done (6/21/2017, 10:52:40 AM)
-	☐ 142-11 factorial challenges
+	✔ 142-11 factorial challenges @done (6/21/2017, 5:52:34 PM)
 	☐ 143-12 pipeline pattern
 	☐ 144-13 factorial challenge redux
 	☐ 145-14 pipeline pattern redux solution
