@@ -183,8 +183,8 @@
 	✔ 138-07 pass return channels @done (6/20/2017, 8:53:41 PM)
 	✔ 139-08 channel directions end receive bidirectional @done (6/20/2017, 9:08:19 PM)
 140-148 Applied Concurrency:
-	☐ 140-09 increment or with channels
-	☐ 141-10 deadlock challenges
+	✔ 140-09 increment or with channels @done (6/21/2017, 10:24:59 AM)
+	✔ 141-10 deadlock challenges @done (6/21/2017, 10:52:40 AM)
 	☐ 142-11 factorial challenges
 	☐ 143-12 pipeline pattern
 	☐ 144-13 factorial challenge redux
@@ -201,5 +201,20 @@
 	☐ 154-22 solution 03
 	☐ 155-23 challenge incrementor
 	☐ 156-24 solution incrementor
-		// dl the rest
-
+157-158 Concurrency Resources:
+	☐ 157 additional resources
+	☐ 158 link.doc
+159-167 Error Handling:
+	☐ 159b01 error intro
+	☐ 160b02 golint
+	☐ 161b03 stdout stderror
+	☐ 162b04 log fatal panic
+	☐ 163b05 errors new documentation
+	☐ 164b06 errors new assign to variable
+	☐ 165b07 fmt errorf
+	☐ 166b08 struct error
+	☐ 167b09 review resources
+168-169 Farewell:
+	☐ 168 nice-articles.doc
+	☐ 169 until next time
+The end:
