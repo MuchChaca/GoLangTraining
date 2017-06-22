@@ -186,8 +186,8 @@
 	✔ 140-09 increment or with channels @done (6/21/2017, 10:24:59 AM)
 	✔ 141-10 deadlock challenges @done (6/21/2017, 10:52:40 AM)
 	✔ 142-11 factorial challenges @done (6/21/2017, 5:52:34 PM)
-	☐ 143-12 pipeline pattern
-	☐ 144-13 factorial challenge redux
+	✔ 143-12 pipeline pattern @done (6/21/2017, 6:25:53 PM)
+	✔ 144-13 factorial challenge redux @done (6/22/2017, 10:57:59 AM)
 	☐ 145-14 pipeline pattern redux solution
 	☐ 146-15 fan out - fan in pattern overview
 	☐ 147-16 fan in
