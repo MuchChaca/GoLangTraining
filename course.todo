@@ -191,7 +191,7 @@
 	✔ 145-14 pipeline pattern redux solution @done (6/22/2017, 11:42:44 AM)
 	✔ 146-15 fan out - fan in pattern overview @done (6/22/2017, 11:42:48 AM)
 	✔ 147-16 fan in @done (6/22/2017, 11:42:49 AM)
-	☐ 148-17 fan out fan in
+	✔ 148-17 fan out fan in @done (6/28/2017, 9:50:34 AM)
 149-156 Concurrency Challenges:
 	☐ 149-18-01 challenge
 	☐ 150-18-02 solution
