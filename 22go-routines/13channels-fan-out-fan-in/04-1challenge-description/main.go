@@ -48,7 +48,7 @@ func workerProcess(in <-chan string) {
 /*
 CHALLENGE #1
 Is this fan out?
-	-> I think this is fan out; we use the same channel on many workProcess() and publisher().
+	-> I think this is fan out; we use the same channel on many.
 CHALLENGE #2
 Is this fan in?
 	-> I do not think this is fan in; we never merge the channels into one.
