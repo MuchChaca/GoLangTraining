@@ -9,7 +9,7 @@
 	✔ 7 workspace namespacing @done (6/5/2017, 8:46:43 AM)
 	✔ 8 env variables @done (6/5/2017, 8:46:50 AM)
 	✔ 9 windows env variables @done (6/5/2017, 8:47:03 AM)
-	✘ 10 mac env variables @cancelled (6/5/2017, 8:47:31 AM)
+	✔ 10 mac env variables @done (6/29/2017, 3:19:07 PM)
 	✔ 11 important to read @done (6/5/2017, 8:48:03 AM)
 	✔ 12 linux machine setup @done (6/5/2017, 8:48:19 AM)
 	✔ 13 linux machine configuration @done (6/5/2017, 8:48:33 AM)
@@ -199,8 +199,8 @@
 	✔ 152-20 solution 02 @done (6/28/2017, 1:16:28 PM)
 	✔ 153-21 challenge 03 @done (6/29/2017, 12:33:24 PM)
 	✔ 154-22 solution 03 @done (6/29/2017, 12:46:38 PM)
-	☐ 155-23 challenge incrementor
-	☐ 156-24 solution incrementor
+	✘ 155-23 challenge incrementor @cancelled (6/29/2017, 3:18:55 PM) // I failed this one QQ
+	✘ 156-24 solution incrementor @cancelled (6/29/2017, 3:19:02 PM) // I failed this one QQ
 157-158 Concurrency Resources:
 	☐ 157 additional resources
 	☐ 158 link.doc
