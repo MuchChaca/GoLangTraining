@@ -206,8 +206,8 @@
 	✔ 157 additional resources @done (6/29/2017, 3:30:32 PM)
 	✔ 158 link.doc @done (6/29/2017, 3:30:33 PM)
 159-167 Error Handling:
-	☐ 159b01 error intro
-	☐ 160b02 golint
+	✔ 159b01 error intro @done (7/2/2017, 9:21:29 AM)
+	✔ 160b02 golint @done (7/2/2017, 10:15:37 AM)
 	☐ 161b03 stdout stderror
 	☐ 162b04 log fatal panic
 	☐ 163b05 errors new documentation
