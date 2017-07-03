@@ -1,0 +1,31 @@
+package main
+
+import (
+	"os"
+)
+
+func main() {
+	_, err := os.Open("no-file.txt")
+	if err != nil {
+		// fmt.Println("err happened", err)
+		// log.Println("err happened", err)
+		// log.Fatalln(err)
+		panic(err)
+	}
+}
+
+/*
+Package log implements a simple logging package ... writes to
+	standard error and prints the date nad time of each logged message
+	... the Fatal functions call os.Exit(1) after writing the log
+	message ... the Panic functions call panic after writing the log
+	message.
+*/
+
+// Fatalln is equivalent to Println() followed by a call to os.Exit(1)
+
+// (+) os.Exit()
+// 	Exit causes the current program to exit with the given status code.
+//		Conventionally, code zero indicates success, non-zero an error.
+//		The program terminates immediately; deferred functions are not run.
+// source: https://godoc.org/os#Exit

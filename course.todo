@@ -208,8 +208,8 @@
 159-167 Error Handling:
 	✔ 159b01 error intro @done (7/2/2017, 9:21:29 AM)
 	✔ 160b02 golint @done (7/2/2017, 10:15:37 AM)
-	☐ 161b03 stdout stderror
-	☐ 162b04 log fatal panic
+	✔ 161b03 stdout stderror @done (7/2/2017, 10:30:25 AM)
+	✔ 162b04 log fatal panic @done (7/3/2017, 9:34:14 AM)
 	☐ 163b05 errors new documentation
 	☐ 164b06 errors new assign to variable
 	☐ 165b07 fmt errorf
