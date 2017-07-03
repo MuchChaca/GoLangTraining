@@ -210,11 +210,11 @@
 	✔ 160b02 golint @done (7/2/2017, 10:15:37 AM)
 	✔ 161b03 stdout stderror @done (7/2/2017, 10:30:25 AM)
 	✔ 162b04 log fatal panic @done (7/3/2017, 9:34:14 AM)
-	☐ 163b05 errors new documentation
-	☐ 164b06 errors new assign to variable
-	☐ 165b07 fmt errorf
-	☐ 166b08 struct error
-	☐ 167b09 review resources
+	✔ 163b05 errors new documentation @done (7/3/2017, 11:09:02 AM)
+	✔ 164b06 errors new assign to variable @done (7/3/2017, 11:18:46 AM)
+	✔ 165b07 fmt errorf @done (7/3/2017, 11:29:33 AM)
+	✔ 166b08 struct error @done (7/3/2017, 12:15:08 PM)
+	✔ 167b09 review resources @done (7/3/2017, 12:20:12 PM)
 168-169 Farewell:
 	☐ 168 nice-articles.doc
 	☐ 169 until next time
