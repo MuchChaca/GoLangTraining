@@ -6,10 +6,10 @@ Golang basics:
 	✔ 02 github create repo @done (7/10/2017, 10:00:36 AM)
 	✔ 03 declare variables @done (7/12/2017, 9:28:47 AM)
 	✔ 04 package func main variables @done (7/12/2017, 9:29:10 AM)
-	☐ 05 varaibles docs variadic params
-	☐ 07 func
-	☐ 08 func param
-	☐ 09 review
+	✔ 05 varaibles docs variadic params @done (7/17/2017, 2:13:57 PM)
+	✔ 07 func @done (7/17/2017, 2:13:55 PM)
+	✔ 08 func param @done (7/17/2017, 2:13:58 PM)
+	✔ 09 review @done (7/17/2017, 2:13:59 PM)
 Aparte:
 	☐ 10 web dev web ninja training using templates
 Setup:
