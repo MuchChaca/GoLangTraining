@@ -13,11 +13,11 @@ Golang basics:
 Fast One:
 	✔ 10 web dev web ninja training using templates @done (7/21/2017, 9:52:13 AM)
 Setup:
-	☐ 11 package management namespacing env variables
-	☐ 12 installing Golang
-	☐ 13 sha checksum in go
-	☐ 14 upgrading Golang
-	☐ 15 setting env vars Golang
-	☐ 16 go get code in course
-	☐ 17 testing env vars
+	✔ 11 package management namespacing env variables @done (7/21/2017, 10:41:57 AM)
+	✔ 12 installing Golang @done (7/21/2017, 11:01:52 AM)
+	✔ 13 sha checksum in go @done (7/21/2017, 11:01:53 AM)
+	✔ 14 upgrading Golang @done (7/21/2017, 11:01:54 AM)
+	✔ 15 setting env vars Golang @done (7/21/2017, 11:01:54 AM)
+	✔ 16 go get code in course @done (7/21/2017, 11:01:55 AM)
+	✔ 17 testing env vars @done (7/21/2017, 11:01:56 AM)
 	
