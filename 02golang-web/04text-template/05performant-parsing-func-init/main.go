@@ -32,4 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
+	// the last parameter set as nil here, are the data we want to pass
+	// to the template
 }
