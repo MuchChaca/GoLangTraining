@@ -20,4 +20,37 @@ Setup:
 	✔ 15 setting env vars Golang @done (7/21/2017, 11:01:54 AM)
 	✔ 16 go get code in course @done (7/21/2017, 11:01:55 AM)
 	✔ 17 testing env vars @done (7/21/2017, 11:01:56 AM)
+To the end ?:
+	✔ 01 golang templates hands on @done (7/24/2017, 10:27:15 AM)
+	☐ 02 golang template data structure
+	☐ 03 golang oop composition in go
+	☐ 04 golang slices
+	☐ 05 golang map
+	☐ 06 golang struct
+	☐ 07 golang methods
+	☐ 08 golang interfaces
+	☐ 09 golang embedded types
+	☐ 10 golang interface solution
+	☐ 11 golang basic server
+	☐ 12 golang http server adding a route
+	☐ 13 golang parsing serving templates
+	☐ 14 web dev essentials
+	☐ 15 http response request architecture
+	☐ 16 http architecture
+	☐ 17 tcp server golang
+	☐ 18 golang http servers
+	☐ 19 understanding golang net http package
+	☐ 20 golang net http hands on
+	☐ 21 golang net http request headers
+	☐ 22 golang net http response writer
+	☐ 23 servermux explained
+	☐ 24 golang servermux best explanation ever
+	☐ 25 golang default server mux defaultserver
+	☐ 26 golang handlefunc explained
+	☐ 27 golang web
+	☐ 28 golang default servermux
+	☐ 29 golang server handle vs handlefunc
+	☐ 30 julien schmidt router
+	☐ 31 golang full website
+	☐ 32 publishing a website using golang
 	
