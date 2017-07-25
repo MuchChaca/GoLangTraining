@@ -22,7 +22,7 @@ Setup:
 	✔ 17 testing env vars @done (7/21/2017, 11:01:56 AM)
 To the end ?:
 	✔ 01 golang templates hands on @done (7/24/2017, 10:27:15 AM)
-	☐ 02 golang template data structure
+	✔ 02 golang template data structure @done (7/25/2017, 2:01:11 PM)
 	☐ 03 golang oop composition in go
 	☐ 04 golang slices
 	☐ 05 golang map
