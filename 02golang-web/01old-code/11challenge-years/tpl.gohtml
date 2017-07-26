@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Document</title>
+	</head>
+	<body>
+	{{range .}}
+		<ul>{{.Libelle}}
+			<ul>{{.Fall.Term}}
+			{{range .Fall.Courses}}
+				<li>{{.Number}} - {{.Name}} - {{.Units}}</li>
+			</ul>
+			{{end}}
+
+			<ul>{{.Spring.Term}}
+			{{range .Fall.Courses}}
+				<li>{{.Number}} - {{.Name}} - {{.Units}}</li>
+			</ul>
+			{{end}}
+		</ul>
+	{{end}}
+	</body>
+</html>

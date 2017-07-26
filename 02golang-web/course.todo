@@ -23,7 +23,7 @@ Setup:
 To the end ?:
 	✔ 01 golang templates hands on @done (7/24/2017, 10:27:15 AM)
 	✔ 02 golang template data structure @done (7/25/2017, 2:01:11 PM)
-	☐ 03 golang oop composition in go
+	✔ 03 golang oop composition in go @done (7/26/2017, 11:04:48 AM)
 	☐ 04 golang slices
 	☐ 05 golang map
 	☐ 06 golang struct
