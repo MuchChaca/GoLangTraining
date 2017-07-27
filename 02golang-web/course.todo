@@ -31,8 +31,8 @@ To the end ?:
 	✔ 06 golang struct @done (7/26/2017, 1:37:51 PM)
 	✔ 07 golang methods @done (7/26/2017, 3:28:41 PM)
 	✔ 08 golang interfaces @done (7/27/2017, 2:32:48 PM)
-	☐ 09 golang embedded types
-	☐ 10 golang interface solution
+	✔ 09 golang embedded types @done (7/27/2017, 2:47:27 PM)
+	✔ 10 golang interface solution @done (7/27/2017, 2:49:01 PM)
 	☐ 11 golang basic server
 	☐ 12 golang http server adding a route
 	☐ 13 golang parsing serving templates
