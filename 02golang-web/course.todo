@@ -8,7 +8,7 @@ Golang basics:
 	✔ 04 package func main variables @done (7/12/2017, 9:29:10 AM)
 	✔ 05 varaibles docs variadic params @done (7/17/2017, 2:13:57 PM)
 	✔ 07 func @done (7/17/2017, 2:13:55 PM)
-	✔ 08 func param @done (7/17/2017, 2:13:58 PM)
+	✔ 08 func param @done (7/27/2017, 2:08:22 PM)
 	✔ 09 review @done (7/17/2017, 2:13:59 PM)
 Fast One:
 	✔ 10 web dev web ninja training using templates @done (7/21/2017, 9:52:13 AM)
@@ -21,14 +21,16 @@ Setup:
 	✔ 16 go get code in course @done (7/21/2017, 11:01:55 AM)
 	✔ 17 testing env vars @done (7/21/2017, 11:01:56 AM)
 To the end ?:
+	Notes: http://goo.gl/3vDKt3
 	✔ 01 golang templates hands on @done (7/24/2017, 10:27:15 AM)
 	✔ 02 golang template data structure @done (7/25/2017, 2:01:11 PM)
 	✔ 03 golang oop composition in go @done (7/26/2017, 11:04:48 AM)
-	☐ 04 golang slices
-	☐ 05 golang map
-	☐ 06 golang struct
-	☐ 07 golang methods
-	☐ 08 golang interfaces
+	✔ 04 golang slices @done (7/26/2017, 12:22:04 PM)
+			// https://calhoun.io  nice articles?
+	✔ 05 golang map @done (7/26/2017, 1:32:35 PM)
+	✔ 06 golang struct @done (7/26/2017, 1:37:51 PM)
+	✔ 07 golang methods @done (7/26/2017, 3:28:41 PM)
+	✔ 08 golang interfaces @done (7/27/2017, 2:32:48 PM)
 	☐ 09 golang embedded types
 	☐ 10 golang interface solution
 	☐ 11 golang basic server
