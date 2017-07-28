@@ -33,9 +33,9 @@ To the end ?:
 	✔ 08 golang interfaces @done (7/27/2017, 2:32:48 PM)
 	✔ 09 golang embedded types @done (7/27/2017, 2:47:27 PM)
 	✔ 10 golang interface solution @done (7/27/2017, 2:49:01 PM)
-	☐ 11 golang basic server
-	☐ 12 golang http server adding a route
-	☐ 13 golang parsing serving templates
+	✔ 11 golang basic server @done (7/28/2017, 6:12:58 PM)
+	✔ 12 golang http server adding a route @done (7/28/2017, 6:49:52 PM)
+	✔ 13 golang parsing serving templates @done (7/28/2017, 6:49:53 PM)
 	☐ 14 web dev essentials
 	☐ 15 http response request architecture
 	☐ 16 http architecture
