@@ -39,7 +39,7 @@ To the end ?:
 	✔ 14 web dev essentials @done (7/29/2017, 12:51:09 PM)
 	✔ 15 http response request architecture @done (7/29/2017, 1:38:18 PM)
 	✔ 16 http architecture @done (7/29/2017, 3:01:18 PM)
-	☐ 17 tcp server golang
+	✔ 17 tcp server golang @done (8/1/2017, 2:42:32 PM)
 	☐ 18 golang http servers
 	☐ 19 understanding golang net http package
 	☐ 20 golang net http hands on
