@@ -3,4 +3,4 @@ on Mac, should be there
 on ArchLinux: sudo pacman -Sy community/perl-net-telnet
 
 start main.go (go run main.go) then ...
-telnet localhost 9000
+telnet localhost 8080
