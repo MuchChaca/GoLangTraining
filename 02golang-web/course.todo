@@ -41,7 +41,7 @@ To the end ?:
 	✔ 16 http architecture @done (7/29/2017, 3:01:18 PM)
 	✔ 17 tcp server golang @done (8/1/2017, 2:42:32 PM)
 	✔ 18 golang http servers @done (8/3/2017, 2:53:44 PM)
-	☐ 19 understanding golang net http package
+	✔ 19 understanding golang net http package @done (8/9/2017, 2:13:26 PM)
 	☐ 20 golang net http hands on
 	☐ 21 golang net http request headers
 	☐ 22 golang net http response writer
