@@ -1,12 +1,15 @@
 package main
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+)
 
 // MyHandler a int handler
 type MyHandler int
 
 func (m MyHandler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-
+	fmt.Println("Any code I want in this func")
 }
 
 func main() {
