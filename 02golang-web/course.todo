@@ -44,8 +44,8 @@ To the end ?:
 	✔ 19 understanding golang net http package @done (8/9/2017, 2:13:26 PM)
 	✔ 20 golang net http hands on @done (8/15/2017, 11:22:20 AM)
 	✔ 21 golang net http request headers @done (8/15/2017, 1:21:27 PM)
-	☐ 22 golang net http response writer
-	☐ 23 servermux explained
+	✔ 22 golang net http response writer @done (8/22/2017, 12:34:56 PM)
+	✔ 23 servermux explained @done (8/22/2017, 1:14:39 PM)
 	☐ 24 golang servermux best explanation ever
 	☐ 25 golang default server mux defaultserver
 	☐ 26 golang handlefunc explained
