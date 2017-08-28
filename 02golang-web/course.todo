@@ -49,8 +49,8 @@ To the end ?:
 	✔ 24 golang servermux best explanation ever @done (8/22/2017, 2:05:43 PM)
 	✔ 25 golang default server mux defaultserver @done (8/23/2017, 10:36:18 AM)
 	✔ 26 golang handlefunc explained @done (8/23/2017, 10:36:24 AM)
-	☐ 27 golang web
-	☐ 28 golang default servermux
+	✔ 27 golang web @done (8/28/2017, 11:46:31 AM)
+	✔ 28 golang default servermux @done (8/28/2017, 11:49:28 AM)
 	☐ 29 golang server handle vs handlefunc
 	☐ 30 julien schmidt router
 	☐ 31 golang full website
