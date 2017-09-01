@@ -51,7 +51,7 @@ To the end ?:
 	✔ 26 golang handlefunc explained @done (8/23/2017, 10:36:24 AM)
 	✔ 27 golang web @done (8/28/2017, 11:46:31 AM)
 	✔ 28 golang default servermux @done (8/28/2017, 11:49:28 AM)
-	☐ 29 golang server handle vs handlefunc
+	✔ 29 golang server handle vs handlefunc @done (9/1/2017, 11:24:25 AM)
 	☐ 30 julien schmidt router
 	☐ 31 golang full website
 	☐ 32 publishing a website using golang

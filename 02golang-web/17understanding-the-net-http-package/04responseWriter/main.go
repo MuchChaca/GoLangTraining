@@ -7,8 +7,10 @@ import (
 
 type myHandler int
 
-func (m myHandler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-	fmt.Fprintln(res, "Any code you want in this func")
+func (m myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Snoop-Key", "this is from Snoop Dogg")
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	fmt.Fprintln(w, "<h1>Any code</h1>")
 }
 
 func main() {

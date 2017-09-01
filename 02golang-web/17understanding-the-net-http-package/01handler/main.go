@@ -8,7 +8,7 @@ import (
 // MyHandler a int handler
 type MyHandler int
 
-func (m MyHandler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+func (m MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Any code I want in this func")
 }
 

@@ -7,12 +7,12 @@ import (
 
 type snoop int
 
-func (s snoop) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-	switch req.URL.Path {
+func (s snoop) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	switch r.URL.Path {
 	case "/cat/":
-		io.WriteString(res, " Pussy Pussy Pussy Cat Dolls")
+		io.WriteString(w, " Pussy Pussy Pussy Cat Dolls")
 	case "/dog":
-		io.WriteString(res, "Snoop Doggy Doggy Dogg")
+		io.WriteString(w, "Snoop Doggy Doggy Dogg")
 	}
 }
 
