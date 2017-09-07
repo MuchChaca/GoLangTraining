@@ -53,6 +53,6 @@ To the end ?:
 	✔ 28 golang default servermux @done (8/28/2017, 11:49:28 AM)
 	✔ 29 golang server handle vs handlefunc @done (9/1/2017, 11:24:25 AM)
 	✔ 30 julien schmidt router @done (9/6/2017, 1:25:54 PM)
-	☐ 31 golang full website
+	✔ 31 golang full website @done (9/7/2017, 9:02:40 AM)
 	☐ 32 publishing a website using golang
 	
