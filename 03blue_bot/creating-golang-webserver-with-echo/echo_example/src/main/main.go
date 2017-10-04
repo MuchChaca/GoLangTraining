@@ -16,6 +16,18 @@ type Dog struct {
 	DogType string `json:"type"`
 }
 
+// Cat is a struct
+type Cat struct {
+	CatName string `json:"name"`
+	CatType string `json:"type"`
+}
+
+// Hamster is a struct
+type Hamster struct {
+	HamsterName string `json:"name"`
+	HamsterType string `json:"type"`
+}
+
 func main() {
 	fmt.Println("Welcome to the echo server!")
 	e := echo.New()
@@ -23,7 +35,12 @@ func main() {
 	e.GET("/", yallo)
 	e.GET("/dogs/:data", getDogs)
 
+	//* "Normal" way
 	e.POST("/dogs", addDog)
+	e.POST("/cats", addCat)
+
+	//* "Echo" way
+	e.POST("/hamsters", addHamster)
 
 	e.Start(":8080")
 }
@@ -92,7 +109,7 @@ func addDog(c echo.Context) error {
 		log.Printf("Failed reading the request body for addDog: %s", err)
 		return c.String(http.StatusInternalServerError, "")
 	}
-
+	//* Faster way
 	err = json.Unmarshal(b, &dog)
 	if err != nil {
 		log.Printf("Failed to unmarchal in addDog: %s", err)
@@ -101,4 +118,34 @@ func addDog(c echo.Context) error {
 
 	log.Printf("This is the dog: %#v", dog)
 	return c.String(http.StatusOK, "We got your doggy!")
+}
+
+func addCat(c echo.Context) error {
+	cat := Cat{}
+
+	defer c.Request().Body.Close()
+	//* 2nd faster way
+	err := json.NewDecoder(c.Request().Body).Decode(&cat)
+	if err != nil {
+		log.Printf("Failed processing addCat request: %s", err)
+		return echo.NewHTTPError(http.StatusInternalServerError)
+	}
+
+	log.Printf("This is the cat: %#v", cat)
+	return c.String(http.StatusOK, "We got your kitty!")
+}
+
+//* "Echo" Way
+//* Note that this is slower
+func addHamster(c echo.Context) error {
+	hamster := Hamster{}
+
+	err := c.Bind(&hamster)
+	if err != nil {
+		log.Printf("Failed processing addHamster request: %s", err)
+		return echo.NewHTTPError(http.StatusInternalServerError)
+	}
+
+	log.Printf("This is the hamster: %#v", hamster)
+	return c.String(http.StatusOK, "We got your hamham!")
 }
