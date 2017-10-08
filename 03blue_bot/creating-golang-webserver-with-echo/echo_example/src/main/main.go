@@ -8,6 +8,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 )
 
 // Dog is a struct
@@ -31,6 +32,25 @@ type Hamster struct {
 func main() {
 	fmt.Println("Welcome to the echo server!")
 	e := echo.New()
+
+	//* A new Group
+	// We give it a prefix "/admin"
+	grp := e.Group("/admin")
+
+	// A way to add a middleware:
+	grp.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
+		Format: `[${time_rfc3339}]  ${status}  ${method}  ${host}${path}  ${latency_human}` + "\n",
+	}))
+
+	// Basic Authentification middleware
+	grp.Use(middleware.BasicAuth(func(username, password string, c echo.Context) (bool, error) {
+		if username == "admin" && password == "admin" {
+			return true, nil
+		}
+		return false, nil
+	}))
+
+	grp.GET("/main", mainAdmin)
 
 	e.GET("/", yallo)
 	e.GET("/dogs/:data", getDogs)
@@ -148,4 +168,8 @@ func addHamster(c echo.Context) error {
 
 	log.Printf("This is the hamster: %#v", hamster)
 	return c.String(http.StatusOK, "We got your hamham!")
+}
+
+func mainAdmin(c echo.Context) error {
+	return c.String(http.StatusOK, "Welcome to the Admin main page")
 }
