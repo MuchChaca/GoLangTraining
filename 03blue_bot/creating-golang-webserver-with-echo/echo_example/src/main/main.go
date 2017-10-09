@@ -42,7 +42,9 @@ func main() {
 		Format: `[${time_rfc3339}]  ${status}  ${method}  ${host}${path}  ${latency_human}` + "\n",
 	}))
 
-	// Basic Authentification middleware
+	//* Basic Authentification middleware
+	// in basic auth, the username:password is encoded in the header in base 64
+	// can be decoded at https://www.base64decode.org/
 	grp.Use(middleware.BasicAuth(func(username, password string, c echo.Context) (bool, error) {
 		if username == "admin" && password == "admin" {
 			return true, nil
