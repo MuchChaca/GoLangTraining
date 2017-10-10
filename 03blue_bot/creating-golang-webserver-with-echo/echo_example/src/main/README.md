@@ -11,3 +11,22 @@ Middleware is a function chained in the HTTP request-response cycle with access 
 for example, logging every request or limiting the number of requests.
 
 Handler is processed in the end after all middleware are finished executing.
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+For Part 8, those are the links of the description:
+
+Short review of JWT Tokens:
+https://www.youtube.com/watch?v=J-9Q469kyJc
+or
+https://youtu.be/EvZpC-Z1p48
+
+Deep (longer) Dive to JWT Tokens:
+https://www.youtube.com/watch?v=oXxbB5kv9OA
+
+JWT package in used in this video:
+https://github.com/dgrijalva/jwt-go
+
+//////////////////////////////////////////////////////////////////////////////

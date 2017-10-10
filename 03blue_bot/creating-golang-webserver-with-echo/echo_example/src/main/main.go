@@ -6,7 +6,10 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strings"
+	"time"
 
+	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
@@ -29,30 +32,46 @@ type Hamster struct {
 	HamsterType string `json:"type"`
 }
 
+// JWTClaims is a struct to set the claims of the JWT
+type JWTClaims struct {
+	Name string `json:"name"`
+	jwt.StandardClaims
+}
+
 func main() {
 	fmt.Println("Welcome to the echo server!")
 	e := echo.New()
 
+	e.Use(ServerHeader)
+
 	//* A new Group
 	// We give it a prefix "/admin"
-	grp := e.Group("/admin")
+	adminGroup := e.Group("/admin")
+
+	cookieGroup := e.Group("/cookie")
 
 	// A way to add a middleware:
-	grp.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
+	adminGroup.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
 		Format: `[${time_rfc3339}]  ${status}  ${method}  ${host}${path}  ${latency_human}` + "\n",
 	}))
 
 	//* Basic Authentification middleware
 	// in basic auth, the username:password is encoded in the header in base 64
 	// can be decoded at https://www.base64decode.org/
-	grp.Use(middleware.BasicAuth(func(username, password string, c echo.Context) (bool, error) {
+	adminGroup.Use(middleware.BasicAuth(func(username, password string, c echo.Context) (bool, error) {
 		if username == "admin" && password == "admin" {
 			return true, nil
 		}
 		return false, nil
 	}))
 
-	grp.GET("/main", mainAdmin)
+	cookieGroup.Use(checkCookie)
+
+	cookieGroup.GET("/main", mainCookie)
+
+	adminGroup.GET("/main", mainAdmin)
+
+	e.GET("/login", login)
 
 	e.GET("/", yallo)
 	e.GET("/dogs/:data", getDogs)
@@ -174,4 +193,88 @@ func addHamster(c echo.Context) error {
 
 func mainAdmin(c echo.Context) error {
 	return c.String(http.StatusOK, "Welcome to the Admin main page")
+}
+
+func mainCookie(c echo.Context) error {
+	return c.String(http.StatusOK, "Welcome to the secret cookie page mained")
+}
+
+func login(c echo.Context) error {
+	username := c.QueryParam("username")
+	password := c.QueryParam("password")
+
+	// check in the db after hashing but here juste for the test:
+	if username == "test" && password == "test" {
+		cookie := &http.Cookie{}
+		// this is the same:
+		// cookie := new(http.Cookie)
+
+		cookie.Name = "sessionID"
+		cookie.Value = "some_string" // a hash ? to represent the session of this user
+		cookie.Expires = time.Now().Add(48 * time.Hour)
+
+		c.SetCookie(cookie)
+
+		//// Create JWT token
+		token, err := createJWT()
+		if err != nil {
+			log.Println("Error creating JWT token? NANII!!??")
+			return c.String(http.StatusInternalServerError, "something went wrong")
+		}
+
+		return c.JSON(http.StatusOK, map[string]string{
+			"message": "You are logged in!",
+			"token":   token,
+		})
+	}
+
+	return c.String(http.StatusUnauthorized, "Your username or password are incorrect!")
+}
+
+func createJWT() (string, error) {
+	claims := JWTClaims{
+		"Jack",
+		jwt.StandardClaims{
+			Id:        "main_user_id",
+			ExpiresAt: time.Now().Add(24 * time.Hour).Unix(),
+		},
+	}
+
+	rawToken := jwt.NewWithClaims(jwt.SigningMethodHS512, claims)
+	token, err := rawToken.SignedString([]byte("mySecret")) // do something more secured if for real
+	if err != nil {
+		return "", err
+	}
+
+	return token, nil
+}
+
+//************  MIDDLEWARES *************//
+
+// ServerHeader is a middleware that will add to any response, the server name
+func ServerHeader(next echo.HandlerFunc) echo.HandlerFunc {
+	return func(c echo.Context) error {
+		c.Response().Header().Set(echo.HeaderServer, "YellowBot/1.0")
+
+		return next(c)
+	}
+}
+
+func checkCookie(next echo.HandlerFunc) echo.HandlerFunc {
+	return func(c echo.Context) error {
+		cookie, err := c.Cookie("sessionID")
+		if err != nil {
+			if strings.Contains(err.Error(), "named cookie not present") {
+				return c.String(http.StatusUnauthorized, "Need cookies to join the dark side!")
+			}
+			log.Println(err)
+			return err
+		}
+
+		if cookie.Value == "some_string" {
+			return next(c)
+		}
+
+		return c.String(http.StatusUnauthorized, "Need cookies to join the dark side!")
+	}
 }
