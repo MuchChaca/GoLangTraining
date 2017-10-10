@@ -47,8 +47,10 @@ func main() {
 	//* A new Group
 	// We give it a prefix "/admin"
 	adminGroup := e.Group("/admin")
-
 	cookieGroup := e.Group("/cookie")
+	jwtGroup := e.Group("/jwt")
+
+	e.Use(middleware.Static("../../static"))
 
 	// A way to add a middleware:
 	adminGroup.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
@@ -65,15 +67,22 @@ func main() {
 		return false, nil
 	}))
 
+	jwtGroup.Use(middleware.JWTWithConfig(middleware.JWTConfig{
+		SigningMethod: "HS512",
+		SigningKey:    []byte("mySecret"),
+	}))
+
 	cookieGroup.Use(checkCookie)
 
 	cookieGroup.GET("/main", mainCookie)
 
 	adminGroup.GET("/main", mainAdmin)
 
+	jwtGroup.GET("/main", mainJWT)
+
 	e.GET("/login", login)
 
-	e.GET("/", yallo)
+	e.GET("/yallo", yallo)
 	e.GET("/dogs/:data", getDogs)
 
 	//* "Normal" way
@@ -197,6 +206,17 @@ func mainAdmin(c echo.Context) error {
 
 func mainCookie(c echo.Context) error {
 	return c.String(http.StatusOK, "Welcome to the secret cookie page mained")
+}
+
+func mainJWT(c echo.Context) error {
+	user := c.Get("user")      // this returns an interface
+	token := user.(*jwt.Token) // becomes of type *jwt.Token
+
+	claims := token.Claims.(jwt.MapClaims) // Now we have the claims
+
+	log.Println("User Name: ", claims["name"], "User ID", claims["jti"])
+
+	return c.String(http.StatusOK, "You are on the secret JWT page!")
 }
 
 func login(c echo.Context) error {
