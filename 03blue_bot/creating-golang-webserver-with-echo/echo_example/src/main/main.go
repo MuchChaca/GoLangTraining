@@ -50,7 +50,8 @@ func main() {
 	cookieGroup := e.Group("/cookie")
 	jwtGroup := e.Group("/jwt")
 
-	e.Use(middleware.Static("../../static"))
+	// e.Use(middleware.Static("../../static"))
+	e.Use(middleware.StaticWithConfig(middleware.StaticConfig{}))
 
 	// A way to add a middleware:
 	adminGroup.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
