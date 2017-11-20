@@ -7,3 +7,9 @@ main.go basically serves only to initialize cobra
 ```bash
 go build -o heft github.com/MuchChaca/GoLangTraining/04perso/01scripting/cli
 ```
+
+## Build
+* **With ``go build``**
+> ``go build -o heft github.com/MuchChaca/GoLangTraining/04perso/01scripting/cli``
+* **With ``goxc``**
+> ``go get -v github.com/laher/goxc``
