@@ -20,13 +20,8 @@
 
 package main
 
-var RootCmd = &cobra.Command{
-	Use:   "test",
-	Short: "Short description",
-	Long: `Longer description.. 
-			  feel free to use a few lines here.
-			  `,
-	Run: func(cmd *cobra.Command, args []string) {
-		// Do Stuff Here
-	},
+import "github.com/MuchChaca/GoLangTraining/04perso/01scripting/displ/cmd"
+
+func main() {
+	cmd.Execute()
 }
