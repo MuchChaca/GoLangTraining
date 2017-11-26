@@ -18,7 +18,7 @@ func init() {
 	// Set up command-line flags.
 	//* Set a flag:
 	// //* flag.TypeVar(pointerToVarStockingValue, "nameOfFlag", defaultValue, "description")
-	flag.StringVar(&path, "p", "", "path to pure")
+	flag.StringVar(&path, "p", "", "path to purge")
 	flag.IntVar(&days, "d", -1, "number of days")
 	flag.BoolVar(&test, "t", false, "test mode -- doesn't actually delete and log to stdout")
 	//* After all flags are defined, call
@@ -31,9 +31,9 @@ func init() {
 	if !isDir(path) {
 		log.Fatal(path, "is not a valid path.")
 	}
-	if days < 1 {
+	/* if days < 1 {
 		log.Fatal("Number of days must be positive, non-zero number. This is for your own protection.")
-	}
+	} */
 	// Set up login ??
 	if test {
 		log.Println("Test mode. Will not delete anything.")
@@ -70,7 +70,7 @@ func walker(path string, info os.FileInfo, err error) error {
 	}
 	// info.ModTime() returns a duration
 	// so if it's too new, we get out
-	if time.Now().Sub(info.ModTime()) < cutOff {
+	if time.Now().Sub(info.ModTime()) <= cutOff {
 		return nil
 	}
 
