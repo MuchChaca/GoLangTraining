@@ -59,7 +59,14 @@ func init() {
 	flag.Parse()
 
 	if isHelp(os.Args) {
-		//
+		//* Refractor into conv !?
+		neededHelp, err := getNonZeroFlags(unitSource, valueSource, unitDest, typeUnit)
+		if err != nil {
+			log.Fatal("Could not idtentify the flag to help you with.")
+		}
+		for helpWith := range neededHelp {
+			log.Println(helpWith) //? display the help for the right flag
+		}
 	}
 
 	conv(typeUnit, valueSource, unitSource, unitDest)
@@ -97,16 +104,14 @@ func isHelp(args []string) bool {
 	return false
 }
 
-// isZero returns the name of the variable in a slice if the flag is not null
-// and a slice of the flags
-// if it's not comparable, it returns an error
-func isZero(unitS string, valueS float64, unitD string, typeU string) ([]string, error) {
+// getNonZeroFlags returns the name of the non zero flags in a slice
+//
+func getNonZeroFlags(unitS string, valueS float64, unitD string, typeU string) ([]string, error) {
 	/* t := reflect.TypeOf(v)
 	if !t.Comparable() {
 		return false, fmt.Errorf("type is not comparable: %v", t)
 	}
 	return v == reflect.Zero(t).Interface(), nil */
-	//! BUGGED
 	var listDefFlags = make([]string, 10)
 	gotOne := false
 	if unitS != "" {

@@ -1,6 +1,9 @@
 # Cobra usage
 *The commands are to be added under the cmd directory*
 **Source:** [sbstjn.com](https://sbstjn.com/create-golang-cli-application-with-cobra-and-goxc.html)
+
+## Initialization
+> ``cobra ``
 ## main.go
 main.go basically serves only to initialize cobra
 
