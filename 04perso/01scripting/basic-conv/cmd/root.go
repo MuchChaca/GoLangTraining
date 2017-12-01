@@ -23,6 +23,7 @@ package cmd
 import (
 	"errors"
 	"fmt"
+	"log"
 	"os"
 
 	homedir "github.com/mitchellh/go-homedir"
@@ -124,8 +125,26 @@ func initConfig() {
 	}
 }
 
+// convert returns the value converted plus the unit converted to
+//	// source[0] needs to be the value source
+//	// source[1] needs to be the unit source
+//	// dest is the unit destination
 func convert(source []string, dest string) (float64, string) {
 	// TODO: complete
-	fmt.Println(dest)
+	switch {
+	case len(source) != 2:
+		log.Fatalln("ERROR - The number of arguments to be converted is incorrect.")
+	case source[0] == "":
+		log.Fatalln("ERROR - The value to be converted need to be provided in -s.")
+	case source[1] == "":
+		log.Fatalln("ERROR - The unit to be converted need to be provided in -s.")
+	}
+	fmt.Println(source)
+
+	//* Handle the differents units
+	switch {
+	//
+	}
+
 	return 0, ""
 }
