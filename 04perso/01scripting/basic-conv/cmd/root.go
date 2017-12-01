@@ -21,10 +21,10 @@
 package cmd
 
 import (
-	"errors"
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
@@ -32,21 +32,10 @@ import (
 )
 
 var cfgFile string
-var errEmpty = errors.New("/")
-
-// var source []interface{}
-// type fullVal struct {
-// 	val  float64
-// 	unit string
-// }
-
-// // pflag.Value interface
-// func (*fullVal) String() string   { return "" }
-// func (*fullVal) Set(string) error { return errEmpty }
-// func (*fullVal) Type() string     { return "" }
 
 var source = make([]string, 2)
 var dest string
+var typeConv string
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
@@ -55,7 +44,7 @@ var RootCmd = &cobra.Command{
 	Long: `***** Basic converter *****
 For example:
 
-	bconv -s [value source],[unit source] -d [unit destination]
+	bconv -s [value source],[unit source] -d [unit destination] -t [type conversion]
 
 	`,
 	// Uncomment the following line if your bare application
@@ -91,12 +80,13 @@ func init() {
 	// MyAdds
 	RootCmd.Flags().StringSliceVarP(&source, "source", "s", []string{"", ""}, "The value and unit to be converted -- try the help command '-h' to learn more")
 	RootCmd.Flags().StringVarP(&dest, "destination", "d", "", "The unit to convert to -- see the list of units supported")
+	RootCmd.Flags().StringVarP(&typeConv, "type", "t", "", "The type of conversion to operate (e.g. mass) -- use -h to see all supported types.")
 
 	// fmt.Println(RootCmd.Flags())
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-	RootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	RootCmd.Flags().BoolP("toggle", "o", false, "Help message for toggle")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -125,12 +115,12 @@ func initConfig() {
 	}
 }
 
-// convert returns the value converted plus the unit converted to
-//	// source[0] needs to be the value source
-//	// source[1] needs to be the unit source
-//	// dest is the unit destination
-func convert(source []string, dest string) (float64, string) {
-	// TODO: complete
+//* convert returns the value converted plus the unit converted to
+//* will return the result and the 'dest string'
+func convert(source []string, dest string) error {
+	//	// source[0] needs to be the value source
+	//	// source[1] needs to be the unit source
+	//	// dest is the unit destination
 	switch {
 	case len(source) != 2:
 		log.Fatalln("ERROR - The number of arguments to be converted is incorrect.")
@@ -139,12 +129,56 @@ func convert(source []string, dest string) (float64, string) {
 	case source[1] == "":
 		log.Fatalln("ERROR - The unit to be converted need to be provided in -s.")
 	}
-	fmt.Println(source)
+
+	// fmt.Println(source)
+
+	// var result float64
+	var converted float64
 
 	//* Handle the differents units
-	switch {
-	//
+	// TODO: complete
+	switch typeConv {
+	case "mass":
+		converted = convertMass(source[0], source[1], dest)
+	}
+	valueFinal := strconv.FormatFloat(converted, 'f', -1, 64)
+
+	fmt.Println(`Conversion :
+` + source[0] + source[1] + ` = ` + valueFinal + `
+		`)
+
+	return nil
+}
+
+//* ---- Converters ---- *//
+//	// Check the type of conversion and makes one calculation for a type
+//	// bring back the source value to the default unit, then in the end
+//	// converts from this default unit to the desired one
+
+// convertMass converts all mass related units
+func convertMass(valueS string, unitS string, unitD string) float64 {
+	value, errConv := strconv.ParseFloat(valueS, 64)
+	if errConv != nil {
+		log.Fatal("Unable to process the value provided.")
 	}
 
-	return 0, ""
+	// valueS string -> value float64
+
+	// bring it to grammes in the switch
+	switch unitS {
+	case "kg":
+		value = value / 0.001
+	}
+
+	// final calcul
+	valueConv := 1.0
+	// according to the unit dest
+	switch dest {
+	case "hg": //hectograms
+		valueConv = 0.01
+	case "lb": // pounds
+		valueConv = 0.00220462
+	}
+
+	return value * valueConv
 }

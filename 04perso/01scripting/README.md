@@ -54,3 +54,4 @@ set the GOOS and GOARCH to the desired values:
 | solaris	|	amd64		|
 | windows	|	386		|
 | windows	|	amd64		|
+
