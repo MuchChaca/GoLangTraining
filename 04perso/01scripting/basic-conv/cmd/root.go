@@ -21,6 +21,7 @@
 package cmd
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -36,6 +37,11 @@ var cfgFile string
 var source = make([]string, 2)
 var dest string
 var typeConv string
+var list bool
+
+//* Usages
+// usageType := ``
+// usageUnit := ``
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
@@ -57,7 +63,7 @@ For example:
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
+// This is called by main.main(). It only needs to happen once to the rootCmd. -- default
 func Execute() {
 	if err := RootCmd.Execute(); err != nil {
 		fmt.Println(err)
@@ -68,10 +74,6 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	//* Usages
-	// usageType := ``
-	// usageUnit := ``
-
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
@@ -81,6 +83,7 @@ func init() {
 	RootCmd.Flags().StringSliceVarP(&source, "source", "s", []string{"", ""}, "The value and unit to be converted -- try the help command '-h' to learn more")
 	RootCmd.Flags().StringVarP(&dest, "destination", "d", "", "The unit to convert to -- see the list of units supported")
 	RootCmd.Flags().StringVarP(&typeConv, "type", "t", "", "The type of conversion to operate (e.g. mass) -- use -h to see all supported types.")
+	RootCmd.Flags().BoolVarP(&list, "list", "l", false, "List all units available")
 
 	// fmt.Println(RootCmd.Flags())
 
@@ -89,7 +92,7 @@ func init() {
 	RootCmd.Flags().BoolP("toggle", "o", false, "Help message for toggle")
 }
 
-// initConfig reads in config file and ENV variables if set.
+// initConfig reads in config file and ENV variables if set. --default
 func initConfig() {
 	if cfgFile != "" {
 		// Use config file from the flag.
@@ -128,9 +131,13 @@ func convert(source []string, dest string) error {
 		log.Fatalln("ERROR - The value to be converted need to be provided in -s.")
 	case source[1] == "":
 		log.Fatalln("ERROR - The unit to be converted need to be provided in -s.")
+	default:
+		// keep going to the program
 	}
 
 	// fmt.Println(source)
+
+	fmt.Println(flag.NArg())
 
 	// var result float64
 	var converted float64
@@ -140,12 +147,16 @@ func convert(source []string, dest string) error {
 	switch typeConv {
 	case "mass":
 		converted = convertMass(source[0], source[1], dest)
+	case "distance":
+		// converted = convertDist(source[0], source[1], dest)
+	default:
+		log.Fatalln("Type of conversion not supported -- check available list of types")
 	}
+
 	valueFinal := strconv.FormatFloat(converted, 'f', -1, 64)
 
 	fmt.Println(`Conversion :
-` + source[0] + source[1] + ` = ` + valueFinal + `
-		`)
+` + source[0] + source[1] + ` = ` + valueFinal + dest)
 
 	return nil
 }
@@ -157,12 +168,11 @@ func convert(source []string, dest string) error {
 
 // convertMass converts all mass related units
 func convertMass(valueS string, unitS string, unitD string) float64 {
+	// valueS string -> value float64
 	value, errConv := strconv.ParseFloat(valueS, 64)
 	if errConv != nil {
 		log.Fatal("Unable to process the value provided.")
 	}
-
-	// valueS string -> value float64
 
 	// bring it to grammes in the switch
 	switch unitS {
@@ -178,6 +188,8 @@ func convertMass(valueS string, unitS string, unitD string) float64 {
 		valueConv = 0.01
 	case "lb": // pounds
 		valueConv = 0.00220462
+	default:
+		// do nothing, cause it will be directly in grams
 	}
 
 	return value * valueConv
