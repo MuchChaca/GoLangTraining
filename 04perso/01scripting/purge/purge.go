@@ -81,7 +81,7 @@ func walker(path string, info os.FileInfo, err error) error {
 			log.Fatal(err)
 		}
 
-		if len(files) > 0 {
+		if len(files) > 1 {
 			log.Printf("directory %s contains files; skipping\n", path)
 			return nil
 		}
