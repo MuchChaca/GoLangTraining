@@ -1,14 +1,14 @@
-# archive/zip package - official library - go 
-## TODOs 
-[ ] Check if it handles password protected zip archives 
- 
+# archive/zip package - official library - go
+## TODOs
+[ ] Check if it handles password protected zip archives
+
 ## Sources
-* [Some examples / explanations](http://blog.ralch.com/tutorial/golang-working-with-zip/) 
-* - 
- 
+* [Some examples / explanations](http://blog.ralch.com/tutorial/golang-working-with-zip/)
+
+
 ## Peek
 ### Extracting
-The content of zip package can be read by using zip reader. 
+The content of zip package can be read by using zip reader.
 To extract the package, we need to recreate all directories and files:
 ```go
 // unzip extract all directories an files from a zip archive
@@ -53,10 +53,10 @@ func unzip(archive, target string) error {
 ```
 
 #### Notes
-I guess the zip file appears like a regular directory, we can't remove stuff from it but copy them somewhere else. 
+I guess the zip file appears like a regular directory, we can't remove stuff from it but copy them somewhere else.
 
 ### Compressing
-Compressing is more complicated than extracting. 
+Compressing is more complicated than extracting.
 It is possible to **compress a single file** or a **hierarchy of directories**. In both cases it is required to change the file header name depending on its type.  
 If the content copied is directory, the file header name should be changed to ``<directory_name>/``.  
 For regular files, its header name is a relative path ``<directory_name>/<file_name>``.
@@ -108,7 +108,7 @@ func zipit(source, target string) error {
 		if info.IsDir() {
 			header.Name += "/"
 		} else {
-			header.Method = zip.Deflate 
+			header.Method = zip.Deflate
 		}
 
 		writer, err := archive.CreateHeader(header)
@@ -134,4 +134,4 @@ func zipit(source, target string) error {
 ```
 
 ## Next
-**archive/tar:** [link](https://godoc.org/archive/tar) 
+**archive/tar:** [link](https://godoc.org/archive/tar)
