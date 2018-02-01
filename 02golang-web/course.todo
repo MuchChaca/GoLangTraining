@@ -29,7 +29,7 @@ To the end ?:
 			// https://calhoun.io  nice articles?
 	✔ 05 golang map @done (7/26/2017, 1:32:35 PM)
 	✔ 06 golang struct @done (7/26/2017, 1:37:51 PM)
-	✔ 07 golang methods @done (7/26/2017, 3:28:41 PM)
+	✔ 07 golang methods @done (7/26/2017, 3:28:41 PM) @crucial
 	✔ 08 golang interfaces @done (7/27/2017, 2:32:48 PM)
 	✔ 09 golang embedded types @done (7/27/2017, 2:47:27 PM)
 	✔ 10 golang interface solution @done (7/27/2017, 2:49:01 PM)
@@ -55,4 +55,5 @@ To the end ?:
 	✔ 30 julien schmidt router @done (9/6/2017, 1:25:54 PM)
 	✔ 31 golang full website @done (9/7/2017, 9:02:40 AM)
 	✔ 32 publishing a website using golang @done (9/7/2017, 9:06:57 AM)
+
 	
