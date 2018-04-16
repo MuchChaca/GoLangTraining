@@ -101,8 +101,11 @@
     "core/router/macro/interpreter/parser",
     "core/router/macro/interpreter/token",
     "core/router/node",
+    "hero",
+    "hero/di",
     "middleware/logger",
     "middleware/recover",
+    "mvc",
     "sessions",
     "view"
   ]
@@ -234,6 +237,18 @@
 
 [[projects]]
   branch = "v2"
+  name = "gopkg.in/mgo.v2"
+  packages = [
+    ".",
+    "bson",
+    "internal/json",
+    "internal/sasl",
+    "internal/scram"
+  ]
+  revision = "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+
+[[projects]]
+  branch = "v2"
   name = "gopkg.in/russross/blackfriday.v2"
   packages = ["."]
   revision = "c455fd41c6baf2f78fd7ff0aadc4e4b4d52698b0"
@@ -247,6 +262,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a7411c2ccf723813251fa8663a8c85b1cdf4e14a5aee6e09e3aadcd9ffa64451"
+  inputs-digest = "2f1fa02a5cd5cda9147bba4d4de9aab809a8e280a93910f1eab5fd808f1613c3"
   solver-name = "gps-cdcl"
   solver-version = 1

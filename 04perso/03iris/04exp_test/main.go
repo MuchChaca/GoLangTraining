@@ -3,47 +3,61 @@ package main
 
 import (
 	"github.com/kataras/iris"
-	"github.com/kataras/iris/sessions"
-
 	"github.com/kataras/iris/mvc"
+	mgo "gopkg.in/mgo.v2"
+
+	"github.com/MuchChaca/GoLangTraining/04perso/03iris/04exp_test/controllers"
 )
 
 func main() {
-	app := iris.New()
+	app := iris.Default()
 
-	// configure the http sessions.
-	sess := sessions.New(sessions.Config{
-		Cookie: "exp_session",
+	//* Database connection
+	session, err := mgo.Dial("localhost")
+	if nil != err {
+		panic(err)
+	}
+	defer session.Close()
+	session.SetMode(mgo.Monotonic, true)
+
+	// Database name and collection name
+	// car-db is database name car is collation name
+	cGenres := session.DB("exp_go_test").C("genres")
+	// c.Insert(&genres.Genre{"Classic"})
+
+	// /
+	app.Get("/", func(context iris.Context) {
+		context.WriteString("Welcome to Iris Go Framework!")
 	})
 
-	// // configure the websocket server.
-	// ws := websocket.New(websocket.Config{})
+	// //* GET /genres
+	// app.Get("/genres", func(ctx iris.Context) {
+	// 	result := genres.Genre{}
+	// 	err = c.Find(bson.M{}).All(&result)
+	// 	if err != nil {
+	// 		log.Fatal(err)
+	// 	}
+	// 	ctx.JSON(result)
+	// })
 
 	// create a sub router and register the client-side library for the iris websockets,
 	// you could skip it but iris websockets supports socket.io-like API.
-	// booksRouter := app.Party("/books")
 	genresRouter := app.Party("/genres")
 
-	// create our mvc application targeted to /books relative sub path.
-	// booksApp := mvc.New(booksRouter)
+	// create our mvc application targeted to /todos relative sub path.
 	genresApp := mvc.New(genresRouter)
 
-	// any dependencies bindings here...
-	// booksApp.Register(
-	// 	book.NewMemoryService(),
-	// 	sess.Start,
-	// 	ws.Upgrade,
-	// )
+	// // any dependencies bindings here...
 	genresApp.Register(
-		genre.NewMemoryService(),
-		sess.Start,
-		ws.Upgrade,
+		// todo.NewMemoryService(),
+		cGenres,
+	// session,
+	// ws.Upgrade,
 	)
 
 	// controllers registration here...
-	// booksApp.Handle(new(controllers.BookController))
-	genresApp.Handle(new(controllers.GenreController))
+	// genresApp.Handle(new(controllers.GenreController))
+	genresApp.Register(new(controllers.GenreController))
 
-	// start the web server at http://localhost:8080
-	app.Run(iris.Addr(":8080"), iris.WithoutVersionChecker)
+	app.Run(iris.Addr(":8080"))
 }
