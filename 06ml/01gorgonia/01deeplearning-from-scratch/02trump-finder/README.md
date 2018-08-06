@@ -7,6 +7,15 @@
 
 **Example using ``pachctl``:**
 ```bash
+# Start docker
+➔ systemctl start docker
+# Start minikube
+➔ minikube start 
+# Configure pods
+➔ pachctl deploy local
+# Set up port forwarding so commands you send can reach Pachyderm within the VM. We background this process since port forwarding blocks.
+➔ pachctl port-forward &
+
 ➔ pachctl create-repo training
 ➔ pachctl create-repo unidentified
 ➔ pachctl create-repo labels

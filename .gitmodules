@@ -1,0 +1,3 @@
+[submodule "06ml/01gorgonia/01deeplearning-from-scratch/02trump-finder/pach-machine-box"]
+	path = 06ml/01gorgonia/01deeplearning-from-scratch/02trump-finder/pach-machine-box
+	url = https://github.com/dwhitena/pach-machine-box.git
